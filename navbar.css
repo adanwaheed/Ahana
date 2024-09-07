@@ -1,0 +1,129 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    transition: all 0.3s ease-in-out;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+}
+.navbar-brand img {
+    margin-left: 4rem;
+    margin-top: 0.7rem;
+}
+
+.nav-link {
+    font-size: 16px;
+    margin-top: 0.7rem;
+    color: #f5f5f5;
+    transition: color 0.2s;
+    font-weight: bold;
+}
+.nav-link:focus ,.nav-item.dropdown a:focus{
+    color: #f5f5f5;
+}
+.nav-link:hover {
+    color: #ffffff;
+}
+.navbar-nav .nav-link.active {
+    color: #f5f5f5;
+    border-bottom: 2px solid #fff;
+}
+
+.navbar-nav {
+    margin-right: 5rem;
+}
+.navbar-nav li{
+    padding-right: 1rem;
+}
+.navbar .dropdown-menu {
+    border-radius: 0;
+    background-color: #ffffff;
+}
+
+.navbar .dropdown-item {
+    color: #333;
+    transition: all 0.7s ease;
+    margin-left: 1rem;
+}
+
+.navbar .dropdown-item:hover {
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    border-left: 2px solid #FF6F61;
+}
+@media (max-width: 1024px) {
+    .navbar-brand img {
+        margin-left: 2rem; 
+    }
+
+    .navbar-nav {
+        margin-right: 8rem;
+    }
+
+    .search {
+        margin-right: 4rem; 
+    }
+}
+
+@media (max-width: 786px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .navbar-brand img {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-nav li {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .nav-link {
+        font-size: 14px; 
+    }
+
+    .search {
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+
+    .search a {
+        font-size: 18px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-brand img {
+        width: 120px; 
+    }
+
+    .nav-link {
+        font-size: 12px; 
+    }
+
+    .navbar-nav {
+        padding: 0 1rem; 
+    }
+
+    .navbar-nav li {
+        margin-bottom: 0.7rem;
+    }
+
+    .search a {
+        font-size: 16px; 
+        margin-right: 0.5rem;
+    }
+}
